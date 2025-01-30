@@ -34,6 +34,8 @@ class MainActivity : ComponentActivity() {
                     )
 
                     Text("asd")
+
+                    Text("Test 3")
                 }
             }
         }
