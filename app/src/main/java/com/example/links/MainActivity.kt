@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.links.presentation.LinkViewModel
+
 import com.example.links.ui.theme.LinksTheme
 
 
@@ -23,7 +24,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-
         setContent {
             val notesViewModel = viewModel<LinkViewModel>();
             LinksTheme {
@@ -32,6 +32,8 @@ class MainActivity : ComponentActivity() {
                         text = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+
+                    Text("asd")
                 }
             }
         }
